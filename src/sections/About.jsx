@@ -1,3 +1,5 @@
+import Globe from "react-globe.gl";
+
 const About = () => {
   return (
     <section className="c-space my-20">
@@ -19,9 +21,27 @@ const About = () => {
           </div>
           </div>
         </div>
-        <div className="col-span-1 xl:row-span-4">
+        <div className="col-span-1 xl:col-span-2 xl:row-span-4">
             <div className="grid-container">
-                <img src="/assets/grid2.png" alt="grid-2" className="m:h-[276px] h-fit object-contain" />
+                <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+                    <Globe 
+                    height={326}
+                    width={752}
+                    backgroundColor="rgba(0,0,0,0)"
+                    backgroundImageOpacity={0.5}
+                    showAtmosphere={true}
+                    showGraticules={true}
+                    globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                    bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                    labelsData={[{
+                        lat:28.636103, lng:77.097004,
+                        text:"I'm Here !",
+                        color: "#fff",
+                        font: "Arial",
+                        size: 35
+                    }]}
+                    />
+                </div>
             </div>
         </div>
       </div>
