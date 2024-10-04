@@ -4,6 +4,7 @@ import About from './sections/About'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Routing from './utils/Routing'
+import Experience from './sections/Experience'
 const App = () => {
   return (
     <main className='max-w-7xl mx-auto'>
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <About />
       <Projects />
+      <Experience />
       <Contact />
       <Routing />
     </main>
