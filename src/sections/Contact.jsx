@@ -68,7 +68,7 @@ const Contact = () => {
     {alert.show && <Alert {...alert} />}
 
     <div className="relative min-h-screen flex items-center justify-center flex-col">
-      <span className='mb-6'><img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" /></span>
+      <span className='mb-6'><img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 mb-5" /></span>
 
       <div className="contact-container">
         <h3 className="head-text">Let's talk</h3>
@@ -113,7 +113,7 @@ const Contact = () => {
               required
               rows={5}
               className="field-input"
-              placeholder="Your thoughts or enquiries or m=maybe you just wanna chat?"
+              placeholder="Your thoughts or enquiries or maybe you just wanna chat?"
             />
           </label>
 
